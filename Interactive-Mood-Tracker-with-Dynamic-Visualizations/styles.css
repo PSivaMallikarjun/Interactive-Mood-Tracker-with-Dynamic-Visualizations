@@ -1,0 +1,60 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.moods {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.mood-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.mood-btn[data-mood="Happy"] { background-color: #ffcc00; }
+.mood-btn[data-mood="Sad"] { background-color: #0099cc; }
+.mood-btn[data-mood="Angry"] { background-color: #ff6666; }
+.mood-btn[data-mood="Stressed"] { background-color: #9966cc; }
+
+.mood-btn:hover {
+  opacity: 0.9;
+}
+
+canvas {
+  margin-top: 20px;
+}
+
+.motivation-section {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+}
